@@ -1,0 +1,32 @@
+/* task 03 */
+#gallery {
+  list-style: none;
+  display: flex;
+  margin-top: 50px;
+}
+
+.gallery-item:not(:last-child) {
+  margin-right: 15px;
+}
+.pic {
+  display: block;
+  width: 300px;
+  transition: transform 0.1s linear;
+}
+.pic:hover,
+.pic:focus {
+  transform: scale(1.1);
+}
+
+/* task 07 */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
