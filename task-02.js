@@ -7,10 +7,16 @@ const ingredients = [
     'Зелень',
     'Приправы',
 ];
-ingredients.forEach(elem => {
-    const li = document.createElement('li')
-    li.textContent = elem
-    listRef.append(li)
-})
 
-console.log(listRef);
+function createList(array) {
+ return array.map(item => {
+    const list = document.createElement('li');
+    list.textContent = item;
+   listRef.append(list)
+   return list
+  });
+}
+
+const products = createList(ingredients)
+
+listRef.append(...products)
