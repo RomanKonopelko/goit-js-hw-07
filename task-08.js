@@ -16,8 +16,8 @@ function create(amount) {
         div.style.height = px + 'px'
         div.style.backgroundColor = `rgb( ${Math.random() * 256} ,  ${Math.random() * 256} ,  ${Math.random() * 256})`
         boxArr.push(div)
-        boxes.append(...boxArr)
-     }
+    }
+    boxes.append(...boxArr)
 }
 function render() {
     boxes.innerHTML = '';
